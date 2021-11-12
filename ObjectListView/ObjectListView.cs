@@ -2156,31 +2156,55 @@ namespace BrightIdeasSoftware
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Browsable(false), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Obsolete("Use SelectedBackColor instead")]
         public virtual Color HighlightBackgroundColor { get { return this.SelectedBackColor; } set { this.SelectedBackColor = value; } }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Obsolete("Use SelectedBackColorOrDefault instead")]
         public virtual Color HighlightBackgroundColorOrDefault { get { return this.SelectedBackColorOrDefault; } }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Browsable(false), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Obsolete("Use SelectedForeColor instead")]
         public virtual Color HighlightForegroundColor { get { return this.SelectedForeColor; } set { this.SelectedForeColor = value; } }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Obsolete("Use SelectedForeColorOrDefault instead")]
         public virtual Color HighlightForegroundColorOrDefault { get { return this.SelectedForeColorOrDefault; } }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Browsable(false), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Obsolete("Use UnfocusedSelectedBackColor instead")]
         public virtual Color UnfocusedHighlightBackgroundColor { get { return this.UnfocusedSelectedBackColor; } set { this.UnfocusedSelectedBackColor = value; } }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Obsolete("Use UnfocusedSelectedBackColorOrDefault instead")]
         public virtual Color UnfocusedHighlightBackgroundColorOrDefault { get { return this.UnfocusedSelectedBackColorOrDefault; } }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Browsable(false), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Obsolete("Use UnfocusedSelectedForeColor instead")]
         public virtual Color UnfocusedHighlightForegroundColor { get { return this.UnfocusedSelectedForeColor; } set { this.UnfocusedSelectedForeColor = value; } }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Obsolete("Use UnfocusedSelectedForeColorOrDefault instead")]
         public virtual Color UnfocusedHighlightForegroundColorOrDefault { get { return this.UnfocusedSelectedForeColorOrDefault; } }
 

@@ -167,6 +167,9 @@ namespace BrightIdeasSoftware {
     /// </summary>
     public interface IFilterAwareRenderer
     {
+        /// <summary>
+        /// 
+        /// </summary>
         IModelFilter Filter { get; set; }
     }
 
@@ -1285,9 +1288,9 @@ namespace BrightIdeasSoftware {
         /// </summary>
         /// <param name="g"></param>
         /// <param name="hti"></param>
-        /// <param name="bounds"></param>
         /// <param name="x"></param>
         /// <param name="y"></param>
+        /// <param name="alignedContentRectangle"></param>
         protected virtual void StandardHitTest(Graphics g, OlvListViewHitTestInfo hti, Rectangle alignedContentRectangle, int x, int y) {
             Rectangle r = alignedContentRectangle;
 
@@ -3578,6 +3581,12 @@ namespace BrightIdeasSoftware {
 
         #region Rendering
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="e"></param>
+        /// <param name="cellBounds"></param>
+        /// <param name="model"></param>
         public override void ConfigureSubItem(DrawListViewSubItemEventArgs e, Rectangle cellBounds, object model) {
             base.ConfigureSubItem(e, cellBounds, model);
             this.highlightTextRenderer.ConfigureSubItem(e, cellBounds, model);

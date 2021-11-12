@@ -540,6 +540,7 @@ namespace BrightIdeasSoftware
         /// Inserts the given collection of model objects to this control at hte given location
         /// </summary>
         /// <param name="modelObjects">A collection of model objects</param>
+        /// <param name="index"></param>
         /// <remarks>
         /// <para>The added objects will appear in their correct sort position, if sorting
         /// is active. Otherwise, they will appear at the given position of the list.</para>
